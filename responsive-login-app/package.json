@@ -1,0 +1,23 @@
+{
+  "name": "responsive-login-app",
+  "version": "1.0.0",
+  "description": "A responsive login application with social login options.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "login",
+    "responsive",
+    "bootstrap",
+    "social-login"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

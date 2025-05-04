@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="34170650980-6lsrdb3rt9k88eqlh4q388ss9thdgv9e.apps.googleusercontent.com">
+
     <title>Login Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -32,29 +36,16 @@
             <div class="text-center mt-4">
                 <p class="text-muted">Or login with</p>
                 <div class="d-flex justify-content-between">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
                     <div id="g_id_onload"
-                         data-client_id="grounded-cider-458012-m2"
+                         data-client_id="34170650980-6lsrdb3rt9k88eqlh4q388ss9thdgv9e.apps.googleusercontent.com"
                          data-callback="handleCredentialResponse"
                          data-auto_prompt="false">
                     </div>
                     <div class="g_id_signin" data-type="standard"></div>
                 </div>
-                <div class="d-flex justify-content-between">
-                    <button id="loginMicrosoft" class="btn btn-light border d-flex align-items-center">
-                        <img src="assets/microsoft-logo.png" alt="Microsoft" style="width: 20px; margin-right: 8px;"> Microsoft
-                    </button>
-                    <button id="loginGoogle" class="btn btn-light border d-flex align-items-center">
-                        <img src="assets/google-logo.png" alt="Google" style="width: 20px; margin-right: 8px;"> Google
-                    </button>
-                </div>
-                <div class="d-flex justify-content-between mt-2">
-                    <button id="loginFacebook" class="btn btn-light border d-flex align-items-center">
-                        <img src="assets/facebook-logo.png" alt="Facebook" style="width: 20px; margin-right: 8px;"> Facebook
-                    </button>
-                    <button id="loginApple" class="btn btn-light border d-flex align-items-center">
-                        <img src="assets/apple-logo.png" alt="Apple" style="width: 20px; margin-right: 8px;"> Apple
-                    </button>
-                </div>
+               
             </div>
         </div>
     </div>

@@ -6,6 +6,7 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -30,6 +31,14 @@
             </form>
             <div class="text-center mt-4">
                 <p class="text-muted">Or login with</p>
+                <div class="d-flex justify-content-between">
+                    <div id="g_id_onload"
+                         data-client_id="grounded-cider-458012-m2"
+                         data-callback="handleCredentialResponse"
+                         data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin" data-type="standard"></div>
+                </div>
                 <div class="d-flex justify-content-between">
                     <button id="loginMicrosoft" class="btn btn-light border d-flex align-items-center">
                         <img src="assets/microsoft-logo.png" alt="Microsoft" style="width: 20px; margin-right: 8px;"> Microsoft

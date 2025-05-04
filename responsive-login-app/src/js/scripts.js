@@ -47,4 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Implement Apple login logic here
         console.log("Apple login initiated.");
     });
+
+    window.handleCredentialResponse = function(response) {
+        console.log("Encoded JWT ID token: " + response.credential);
+        // Decode the JWT token and handle the user login
+        // You can send the token to your backend for verification
+    };
 });
